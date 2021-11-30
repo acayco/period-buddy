@@ -85,54 +85,18 @@
     <div class="box"> <img src="images\Tampons - Organic - Rael.png" alt="Rael Organic Tampons (Super)"> <a href=" ">Rael Organic Tampons (Super)</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Tampons - Super Heavy - Tampax.png" alt="Tampax Super Plus Absorbency Tampons"> <a href=" ">Tampax Super Plus Absorbency Tampons</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Menstrual Cup - Size 1 - Rael.png" alt="Rael Reusable Menstrual Cup (Size 1)"> <a href=" ">Rael Reusable Menstrual Cup (Size 1)</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Menstrual Cup - Size 2 - Rael.png" alt="Rael Reusable Menstrual Cup (Size 2)"> <a href=" ">Rael Reusable Menstrual Cup (Size 1)</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Period Underwear - Disposable - Organic -  Rael.png" alt="Rael Organic Cotton Disposable Period Underwear"> <a href=" ">Rael Organic Cotton Disposable Period Underwear</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
-  </div>
-  <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Period Underwear - Reusable - Rael.png" alt="Rael Reusable Period Underwear"> <a href=" ">Rael Reusable Period Underwear</a> </div>
   </div>
 </body>
