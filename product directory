@@ -10,16 +10,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <header>
-    <nav>
-    <div class="logo"><h1>Period Buddy</h1></div>
-    <div class="openMenu"><i class="fa fa-bars"></i></div>
-    <ul class="mainMenu">  
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#productdirectory">Product Directory</a></li>
-      <div class="closeMenu"><i class="fa fa-times"></i></div>
-    </ul>
-    </nav>
+  <nav>
+  <div class="logo"><h1>Period Buddy</h1></div>
+  <div class="openMenu"><i class="fa fa-bars"></i></div>
+  <ul class="mainMenu">  
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="product directory">Product Directory</a></li>
+    <div class="closeMenu"><i class="fa fa-times"></i></div>
+  </ul>
+  </nav>
 </header>
 
 <body>
@@ -40,49 +40,49 @@
     <div class="box"> <img src="images\Panty Liners - Rael.png" alt="Rael Organic Cotton Panty Liners"> <a href=" ">Rael Organic Cotton Panty Liners</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Panty Liners - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Panty Liners"> <a href=" ">Rael Organic Cotton Reusable Panty Liners</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Pads - Regular - Always.png" alt="Always Ultra Thin Pads"> <a href=" ">Always Ultra Thin Pads</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Rael-Pads-01_reg_300x.png" alt="Rael Organic Cotton Pads (Regular)"></img> <a href=" ">Rael Organic Cotton Pads (Regular)</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Pads - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Pads (Regular)"> <a href=" ">Rael Organic Cotton Reusable Pads (Regular)</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Pads - Heavy - Always.png" *product image* alt="Always Pure Cotton with Wings"> <a href=" ">Always Pure Cotton with Wings</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Rael-Pads-01_reg_300x.png" alt="Rael Organic Cotton Pads (Large)"> <a href=" ">Rael Organic Cotton Pads (Large)</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Pads - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Pads (Large)"> <a href=" ">Rael Organic Cotton Reusable Pads (Large)</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Pads - Super Heavy - Always.png" alt="Always Overnight Absorbency Unscented without Wings"> <a href=" ">Always Overnight Absorbency Unscented without Wings</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Pads - Overnight - Rael.png" alt="Rael Organic Cotton Overnight Pads"> <a href=" ">Rael Organic Cotton Overnight Pads</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Pads - Overnight - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Pads (Overnight)"> <a href=" ">Rael Organic Cotton Reusable Pads (Overnight)</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Tampons - Light - Tampax.png" alt="Tampax Lite Absorbency Tampons"> <a href=" ">Tampax Lite Absorbency Tampons</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Tampons - Regular - Tampax.png" alt="Tampax Regular Absorbency with LeakGuard Braid"> <a href=" ">Tampax Regular Absorbency with LeakGuard Braid</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Tampons - Organic - Rael.png" alt="Rael Organic Tampons (Regular)"> <a href=" ">Rael Organic Tampons (Regular)</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Tampons - Heavy - Tampax.png" alt="Tampax Ultra Tampons"> <a href=" ">"Tampax Ultra Tampons"</a> </div>
   </div>
   <div class="objects">
-    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+    <div class="box"> <img src="images\Tampons - Organic - Rael.png" alt="Rael Organic Tampons (Super)"> <a href=" ">Rael Organic Tampons (Super)</a> </div>
   </div>
   <div class="objects">
     <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
