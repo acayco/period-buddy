@@ -108,12 +108,12 @@ ul {
     list-style: none;
 }
 
-#quiz {
+.quiz {
     line-height: 2;
-    margin: 0 16px;
+    text-align: center;
 }
 
-#quiz li {
+.quiz li {
     background: #D44D5C;
     color: #f5e9e2;
     padding: 5px 10px;

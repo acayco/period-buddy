@@ -9,6 +9,7 @@
   <meta name="description" content="Landing page and quiz">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
   <script src="app.js"></script>
 </head>
 <header>
@@ -31,40 +32,34 @@
     <p><strong>Take our quiz to find the best product for your menstrual experience! </strong></p>
   </div>
   <section>
-
-    <! use the input type that he used for breakfast choices!>
-
-      <form id="quiz">
-        <ul>
-          <li>How heavy are your periods?</li>
-          <div>
-            <input type="radio">Light</input>
-          </div>
-          <div>
-            <input type="radio">Medium</input>
-          </div>
-          <div>
-            <input type="radio">Heavy</input>
-          </div>
-          <div>
-            <input type="radio">Super heavy</input>
-          </div>
-
-          </div>
-          <li>How physically active are you when you’re on your period?</li>
-          <div>
+      <form>
+        <ul class="quiz">
+          <li>How heavy are your periods?
             <div>
-              <input type="radio">I am not active at all</input>
+              <input type="radio">Light</input>
             </div>
             <div>
-              <input type="radio">I’m a bit active</input>
+              <input type="radio">Medium</input>
             </div>
             <div>
-              <input type="radio">I’m super active</input>
+              <input type="radio">Heavy</input>
             </div>
-          </div>
-          <li>How open are you to learning how to use a new product?</li>
-          <div>
+            <div>
+              <input type="radio">Super heavy</input>
+            </div>
+          </li>
+          <li>How physically active are you when you’re on your period?
+              <div>
+                <input type="radio">I am not active at all</input>
+              </div>
+              <div>
+                <input type="radio">I’m a bit active</input>
+              </div>
+              <div>
+                <input type="radio">I’m super active</input>
+              </div>
+          </li>
+          <li>How open are you to learning how to use a new product?
             <div>
               <input type="radio">I want an easy product to use</input>
             </div>
@@ -74,11 +69,9 @@
             <div>
               <input type="radio">I don’t mind the learning curve</input>
             </div>
-          </div>
-          <li> How concerned are you about using organic products?</li>
-          <div>
+          </li>
+          <li> How concerned are you about using organic products?
             <div>
-
               <input type="radio">I only want to use organic products</input>
             </div>
             <div>
@@ -87,9 +80,8 @@
             <div>
               <input type="radio">I don’t want to use organic products</input>
             </div>
-          </div>
-          <li>How concerned are you about the sustainability of the product?</li>
-          <div>
+          </li>
+          <li>How concerned are you about the sustainability of the product?
             <div>
               <input type="radio">I want to be able to reuse my product</input>
             </div>
@@ -99,21 +91,17 @@
             <div>
               <input type="radio">I don’t want to use reusable products</input>
             </div>
-          </div>
-
+          </li>
           <li>
-            Are you more comfortable with internal-use menstrual products or external-use menstrual products?</li>
-          <div>
+            Are you more comfortable with internal-use menstrual products or external-use menstrual products?
             <div>
               <input type="radio">Internal-use</input>
             </div>
             <div>
               <input type="radio">External-use</input>
             </div>
-          </div>
-
-          <li>How much would you like to spend on your menstrual products?</li>
-          <div>
+          </li>
+          <li>How much would you like to spend on your menstrual products?
             <div>
               <input type="radio">I don’t want to spend a lot</input>
             </div>
@@ -123,14 +111,17 @@
             <div>
               <input type="radio">I don’t mind spending a lot</input>
             </div>
-          </div>
+          </li>
         </ul>
       </form>
   </section>
-  <div id="back-next">
-    <button>Back</button>
-    <button>Next</button>
-  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript">
+$('.quiz').slick();
+</script>
 </body>
 
 </html>
