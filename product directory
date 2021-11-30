@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Description Page</title>
+  <meta name="description" content="Product Description Page">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <nav>
+    <div class="logo"><h1>Period Buddy</h1></div>
+    <div class="openMenu"><i class="fa fa-bars"></i></div>
+    <ul class="mainMenu">  
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#productdirectory">Product Directory</a></li>
+      <div class="closeMenu"><i class="fa fa-times"></i></div>
+    </ul>
+    </nav>
+</header>
+
+<body>
+  <div>
+    <button>Show All</button>
+    <button>Price</button>
+    <button>Flow</button>
+    <button>Internal/External</button>
+    <button>Organic</button>
+    <button>Activity</button>
+    <button>Sustainability</button>
+  </div>
+
+  <div class="objects">
+    <div class="box"> <img src="images\Panty Liners - Always.png" alt="Always Thin Daily Liners"> <a href=" ">Always Thin Daily Liners</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img src="images\Panty Liners - Rael.png" alt="Rael Organic Cotton Panty Liners"> <a href=" ">Rael Organic Cotton Panty Liners</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+  <div class="objects">
+    <div class="box"> <img> *product image* </img> <a href=" "> product name</a> </div>
+  </div>
+</body>
