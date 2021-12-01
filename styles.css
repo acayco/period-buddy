@@ -2,14 +2,16 @@
 
 html {
     box-sizing: border-box;
-    background-color: #f5e9e2;
+    background-color: #ffd4d4;
     font-size: 16px;
 }
+
+/*nav styles*/
 
 nav {
     top: 0;
     width: 100%;
-    background: #D44D5C;
+    background: #ff9097;
     display: flex;
     justify-content: space-evenly;
 }
@@ -25,14 +27,15 @@ nav .mainMenu li a {
     flex-wrap: wrap;
     padding: 0 10px;
     text-decoration: none;
-    color: #f5e9e2;
+    color: #272727;
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
+    font-weight: 700;
 }
 
 nav .mainMenu li a:hover {
-    background: #773344;
+    text-decoration: underline;
 }
 
 nav .openMenu {
@@ -45,7 +48,7 @@ nav .mainMenu .closeMenu, .icons i {
 }
 
 nav .logo {
-    color: #f5e9e2;
+    color: #272727;
     font-size: 1.5em;
 }
 
@@ -87,7 +90,7 @@ header img {
 body {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    color: #773344;
+    color: #272727;
     margin: auto;
 }
 
@@ -116,16 +119,16 @@ ul {
 }
 
 .quiz li {
-    background: #D44D5C;
-    color: #f5e9e2;
+    background: #ff949b;
+    color: #272727;
     padding: 5px 10px;
     border-radius: 15px;
 }
 
 button {
     font-family: "Lato", Arial, Helvetica, sans-serif;
-    background-color: #773344;
-    color: #f5e9e2;
+    background-color: #2b50aa;
+    color: #ffd4d4;
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 15px; 
@@ -141,20 +144,20 @@ button {
 /*product styles*/
 
 .productImg img {
-    box-shadow: 6px 5px 11px 0px #773344;
+    box-shadow: 6px 5px 11px 0px #272727;
 }
 
 .productCard ul {
-    background: #D44D5C;
-    color: #f5e9e2;
+    background: #ff9097;
+    color: #272727;
     padding: 5px 10px;
     border-radius: 15px;
 }
 
 input[value="Buy Here"] {
     font-family: "Lato", Arial, Helvetica, sans-serif;
-    background-color: #773344;
-    color: #f5e9e2;
+    background-color: #2b50aa;
+    color: #ffd4d4;
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -162,8 +165,8 @@ input[value="Buy Here"] {
 
 input[value="Not right? Try again!"] {
     font-family: "Lato", Arial, Helvetica, sans-serif;
-    background-color: #773344;
-    color: #f5e9e2;
+    background-color: #2b50aa;
+    color: #ffd4d4;
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 15px;
