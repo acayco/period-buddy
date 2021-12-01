@@ -111,18 +111,15 @@ ul {
 .quiz {
     line-height: 2;
     text-align: center;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .quiz li {
     background: #D44D5C;
     color: #f5e9e2;
     padding: 5px 10px;
-    border-radius: 10px;
-}
-
-#back-next {
-    display: flex;
-    justify-content: space-between;
+    border-radius: 15px;
 }
 
 button {
