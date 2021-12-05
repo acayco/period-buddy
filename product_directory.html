@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Description Page</title>
-    <meta name="description" content="Product Description Page">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <header>
-    <nav>
-    <div class="logo"><h1>Period Buddy</h1></div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Description Page</title>
+  <meta name="description" content="Product Directory">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+  <nav>
+    <div class="logo">
+      <h1>Period Buddy</h1>
+    </div>
     <div class="openMenu"><i class="fa fa-bars"></i></div>
-    <ul class="mainMenu">  
+    <ul class="mainMenu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="product directory">Product Directory</a></li>
       <div class="closeMenu"><i class="fa fa-times"></i></div>
     </ul>
-    </nav>
-  </header>
+  </nav>
+</header>
 
-  <body>
-    <div class="filters">
-      <button class="filterBtn" onclick="filterObjects('all')">Show All</button>
-      <button class="filterBtn" onclick="filterObjects('lightFlow')">Light Flow</button>
-      <button class="filterBtn" onclick="filterObjects('moderateFlow')">Moderate Flow</button>
-      <button class="filterBtn" onclick="filterObjects('heavyFlow')">Heavy Flow</button>
-      <button class="filterBtn" onclick="filterObjects('superHeavy')">Super Heavy Flow</button>
-      <button class="filterBtn" onclick="filterObjects('internal')">Internal Use</button>
-      <button class="filterBtn" onclick="filterObjects('external')">External Use</button>
-      <button class="filterBtn" onclick="filterObjects('organic')">Organic</button>
-      <button class="filterBtn" onclick="filterObjects('active')">Active</button>
-      <button class="filterBtn" onclick="filterObjects('reusable')">Reusable</button>
-      <button class="filterBtn" onclick="filterObjects('singleUse')">Single-Use</button>
-      <button class="filterBtn" onclick="filterObjects('easy')">Easy</button>
-      <button class="filterBtn" onclick="filterObjects('medium')">Medium</button>
-      <button class="filterBtn" onclick="filterObjects('difficult')">Difficult</button>
-    </div>
+<body>
+  <div class="filters">
+    <button class="filterBtn" onclick="filterObjects('all')">Show All</button>
+    <h6>Flow</h6>
+    <button class="filterBtn" onclick="filterObjects('lightFlow')">Light Flow</button>
+    <button class="filterBtn" onclick="filterObjects('moderateFlow')">Moderate Flow</button>
+    <button class="filterBtn" onclick="filterObjects('heavyFlow')">Heavy Flow</button>
+    <button class="filterBtn" onclick="filterObjects('superHeavy')">Super Heavy Flow</button>
+    <h6>Place</h6>
+    <button class="filterBtn" onclick="filterObjects('internal')">Internal Use</button>
+    <button class="filterBtn" onclick="filterObjects('external')">External Use</button>
+    <h6>Organic</h6>
+    <button class="filterBtn" onclick="filterObjects('organic')">Organic</button>
+    <button class="filterBtn" onclick="filterObjects('nonOrganic')">Non-organic</button>
+    <h6>Activity</h6>
+    <button class="filterBtn" onclick="filterObjects('active')">Active</button>
+    <h6>Sustainability</h6>
+    <button class="filterBtn" onclick="filterObjects('reusable')">Reusable</button>
+    <button class="filterBtn" onclick="filterObjects('singleUse')">Single-Use</button>
+    <h6>Difficulty</h6>
+    <button class="filterBtn" onclick="filterObjects('easy')">Easy</button>
+    <button class="filterBtn" onclick="filterObjects('medium')">Medium</button>
+    <button class="filterBtn" onclick="filterObjects('difficult')">Difficult</button>
+  </div>
 
-    <div class="objects">
-      <div class="box lightFlow external singleUse easy"> <img src="images\Panty Liners - Always.png" alt="Always Thin Daily Liners" width="250" height="250"> <a href="Panty Liners - Always.html">Always Thin Daily Liners</a> </div>
-      <div class="box lightFlow external organic singleUs easy"> <img src="images\Panty Liners - Rael.png" alt="Rael Organic Cotton Panty Liners" width="250" height="250"> <a href="Panty Liners - Rael.html">Rael Organic Cotton Panty Liners</a> </div>
-      <div class="box lightFlow external organic reusable easy"> <img src="images\Panty Liners - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Panty Liners" width="250" height="250"> <a href="Panty Liners - Reusable - Rael.html">Rael Organic Cotton Reusable Panty Liners</a> </div>
-      <div class="box moderateFlow external singleUse easy"> <img src="images\Pads - Regular - Always.png" alt="Always Ultra Thin Pads" width="250" height="250"> <a href="Pads - Regular - Always.html">Always Ultra Thin Pads</a> </div>
-      <div class="box moderateFlow external organic singleUse easy"> <img src="images\Pads - Regular - Rael.png" alt="Rael Organic Cotton Pads (Regular)" width="250" height="250"></img> <a href="Pads - Regular - Rael.html">Rael Organic Cotton Pads (Regular)</a> </div>
-      <div class="box moderateFlow external organic reusable easy"> <img src="images\Pads - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Pads (Regular)" width="250" height="250"> <a href="Pads - Regular - Reusable - Rael.html">Rael Organic Cotton Reusable Pads (Regular)</a> </div>
-      <div class="box heavyFlow external singleUse easy"> <img src="images\Pads - Heavy - Always.png" alt="Always Pure Cotton with Wings" width="250" height="250"> <a href="Pads - Heavy - Always.html">Always Pure Cotton with Wings</a> </div>
-      <div class="box heavyFlow external organic singleUse easy"> <img src="images\Pads - Regular - Rael.png" alt="Rael Organic Cotton Pads (Large)" width="250" height="250"> <a href="Pads - Heavy - Rael.html">Rael Organic Cotton Pads (Large)</a> </div>
-      <div class="box heavyFlow external organic reusable easy"> <img src="images\Pads - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Pads (Large)" width="250" height="250"> <a href="Pads - Heavy - Reusable - Rael.html">Rael Organic Cotton Reusable Pads (Large)</a> </div>
-      <div class="box superHeavy external singleUse easy"> <img src="images\Pads - Super Heavy - Always.png" alt="Always Overnight Absorbency Unscented without Wings" width="250" height="250"> <a href="Pads - Super Heavy - Always.html">Always Overnight Absorbency Unscented without Wings</a> </div>
-      <div class="box superHeavy external organic singleUse easy"> <img src="images\Pads - Super Heavy - Rael.png" alt="Rael Organic Cotton Overnight Pads" width="250" height="250"> <a href="Pads - Super Heavy - Rael.html">Rael Organic Cotton Overnight Pads</a> </div>
-      <div class="box superHeavy external organic reusable easy"> <img src="images\Pads - Super Heavy - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Pads (Overnight)" width="250" height="250"> <a href="Pads - Super Heavy - Reusable - Rael.html">Rael Organic Cotton Reusable Pads (Overnight)</a> </div>
-      <div class="box lightFlow internal active singleUse medium"> <img src="images\Tampons - Light - Tampax.png" alt="Tampax Lite Absorbency Tampons" width="250" height="250"> <a href="Tampons - Light - Tampax.html">Tampax Lite Absorbency Tampons</a> </div>
-      <div class="box moderateFlow internal active singleUse medium"> <img src="images\Tampons - Regular - Tampax.png" alt="Tampax Regular Absorbency with LeakGuard Braid" width="250" height="250"> <a href="Tampons - Regular - Tampax .html">Tampax Regular Absorbency with LeakGuard Braid</a> </div>
-      <div class="box moderateFlow internal active organic singleUse medium"> <img src="images\Tampons - Organic - Rael.png" alt="Rael Organic Tampons (Regular)" width="250" height="250"> <a href="Tampons - Regular - Rael.html">Rael Organic Tampons (Regular)</a> </div>
-      <div class="box heavyFlow internal active singleUse medium"> <img src="images\Tampons - Heavy - Tampax.png" alt="Tampax Ultra Tampons" width="250" height="250"> <a href="Tampons - Heavy -Tampax.html">"Tampax Ultra Tampons"</a> </div>
-      <div class="box heavyFlow internal active organic singleUse medium"> <img src="images\Tampons - Organic - Rael.png" alt="Rael Organic Tampons (Super)" width="250" height="250"> <a href="Tampons - Super Heavy -Rael.html">Rael Organic Tampons (Super)</a> </div>
-      <div class="box superHeavy internal active singleUse medium"> <img src="images\Tampons - Super Heavy - Tampax.png" alt="Tampax Super Plus Absorbency Tampons" width="250" height="250"> <a href="Tampons - Super Heavy - Tampax .html">Tampax Super Plus Absorbency Tampons</a> </div>
-      <div class="box moderateFlow internal active reusable difficult"> <img src="images\Menstrual Cup - Size 1 - Rael.png" alt="Rael Reusable Menstrual Cup (Size 1)" width="250" height="250"> <a href="Tampons - Super Heavy -Rael.html">Rael Reusable Menstrual Cup (Size 1)</a> </div>
-      <div class="box heavyFlow internal active reusable difficult"> <img src="images\Menstrual Cup - Size 2 - Rael.png" alt="Rael Reusable Menstrual Cup (Size 2)" width="250" height="250"> <a href="Menstrual Cups - Heavy - Rael.html">Rael Reusable Menstrual Cup (Size 2)</a> </div>
-      <div class="box heavyFlow external organic active singleUse easy"> <img src="images\Period Underwear - Disposable - Organic -  Rael.png" alt="Rael Organic Cotton Disposable Period Underwear" width="250" height="250"> <a href="Period Underwear - Rael.html">Rael Organic Cotton Disposable Period Underwear</a> </div>
-      <div class="box heavyFlow external active reusable easy"> <img src="images\Period Underwear - Reusable - Rael.png" alt="Rael Reusable Period Underwear"> <a href="Period Underwear - Reusable - Rael.html">Rael Reusable Period Underwear</a> </div>
-    </div>
+  <div class="objects">
+    <div class="box lightFlow external nonOrganic singleUse easy"> <img src="images\Panty Liners - Always.png" alt="Always Thin Daily Liners" width="250" height="250"> <a href="Panty Liners - Always.html">Always Thin Daily Liners</a> </div>
+    <div class="box lightFlow external organic singleUs easye"> <img src="images\Panty Liners - Rael.png" alt="Rael Organic Cotton Panty Liners" width="250" height="250"> <a href="Panty Liners - Rael.html">Rael Organic Cotton Panty Liners</a> </div>
+    <div class="box lightFlow external organic reusable easy"> <img src="images\Panty Liners - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Panty Liners" width="250" height="250"> <a href="Panty Liners - Reusable - Rael.html">Rael Organic Cotton Reusable Panty Liners</a> </div>
+    <div class="box moderateFlow external nonOrganic singleUse easy"> <img src="images\Pads - Regular - Always.png" alt="Always Ultra Thin Pads" width="250" height="250"> <a href="Pads - Regular - Always.html">Always Ultra Thin Pads</a> </div>
+    <div class="box moderateFlow external organic singleUse easy"> <img src="images\Pads - Regular - Rael.png" alt="Rael Organic Cotton Pads (Regular)" width="250" height="250"></img> <a href="Pads - Regular - Rael.html">Rael Organic Cotton Pads (Regular)</a> </div>
+    <div class="box moderateFlow external organic reusable easy"> <img src="images\Pads - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Pads (Regular)" width="250" height="250"> <a href="Pads - Regular - Reusable - Rael.html">Rael Organic Cotton Reusable Pads (Regular)</a> </div>
+    <div class="box heavyFlow external nonOrganic singleUse easy"> <img src="images\Pads - Heavy - Always.png" alt="Always Pure Cotton with Wings" width="250" height="250"> <a href="Pads - Heavy - Always.html">Always Pure Cotton with Wings</a> </div>
+    <div class="box heavyFlow external organic singleUse easy"> <img src="images\Pads - Regular - Rael.png" alt="Rael Organic Cotton Pads (Large)" width="250" height="250"> <a href="Pads - Heavy - Rael.html">Rael Organic Cotton Pads (Large)</a> </div>
+    <div class="box heavyFlow external organic reusable easy"> <img src="images\Pads - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Pads (Large)" width="250" height="250"> <a href="Pads - Heavy - Reusable - Rael.html">Rael Organic Cotton Reusable Pads (Large)</a> </div>
+    <div class="box superHeavy external nonOrganic singleUse easy"> <img src="images\Pads - Super Heavy - Always.png" alt="Always Overnight Absorbency Unscented without Wings" width="250" height="250"> <a href="Pads - Super Heavy - Always.html">Always Overnight Absorbency Unscented without Wings</a> </div>
+    <div class="box superHeavy external organic singleUse easy"> <img src="images\Pads - Super Heavy - Rael.png" alt="Rael Organic Cotton Overnight Pads" width="250" height="250"> <a href="Pads - Super Heavy - Rael.html">Rael Organic Cotton Overnight Pads</a> </div>
+    <div class="box superHeavy external organic reusable easy"> <img src="images\Pads - Super Heavy - Reusable - Rael.png" alt="Rael Organic Cotton Reusable Pads (Overnight)" width="250" height="250"> <a href="Pads - Super Heavy - Reusable - Rael.html">Rael Organic Cotton Reusable Pads (Overnight)</a> </div>
+    <div class="box lightFlow internal active nonOrganic singleUse medium"> <img src="images\Tampons - Light - Tampax.png" alt="Tampax Lite Absorbency Tampons" width="250" height="250"> <a href="Tampons - Light - Tampax.html">Tampax Lite Absorbency Tampons</a> </div>
+    <div class="box moderateFlow internal active nonOrganic singleUse medium"> <img src="images\Tampons - Regular - Tampax.png" alt="Tampax Regular Absorbency with LeakGuard Braid" width="250" height="250"> <a href="Tampons - Regular - Tampax .html">Tampax Regular Absorbency with LeakGuard Braid</a> </div>
+    <div class="box moderateFlow internal active organic singleUse medium"> <img src="images\Tampons - Organic - Rael.png" alt="Rael Organic Tampons (Regular)" width="250" height="250"> <a href="Tampons - Regular - Rael.html">Rael Organic Tampons (Regular)</a> </div>
+    <div class="box heavyFlow internal active nonOrganic singleUse medium"> <img src="images\Tampons - Heavy - Tampax.png" alt="Tampax Ultra Tampons" width="250" height="250"> <a href="Tampons - Heavy -Tampax.html">"Tampax Ultra Tampons"</a> </div>
+    <div class="box heavyFlow internal active organic singleUse medium"> <img src="images\Tampons - Organic - Rael.png" alt="Rael Organic Tampons (Super)" width="250" height="250"> <a href="Tampons - Super Heavy -Rael.html">Rael Organic Tampons (Super)</a> </div>
+    <div class="box superHeavy internal active nonOrganic singleUse medium"> <img src="images\Tampons - Super Heavy - Tampax.png" alt="Tampax Super Plus Absorbency Tampons" width="250" height="250"> <a href="Tampons - Super Heavy - Tampax .html">Tampax Super Plus Absorbency Tampons</a> </div>
+    <div class="box moderateFlow internal active nonOrganic reusable difficult"> <img src="images\Menstrual Cup - Size 1 - Rael.png" alt="Rael Reusable Menstrual Cup (Size 1)" width="250" height="250"> <a href="Tampons - Super Heavy -Rael.html">Rael Reusable Menstrual Cup (Size 1)</a> </div>
+    <div class="box heavyFlow internal active nonOrganic reusable difficult"> <img src="images\Menstrual Cup - Size 2 - Rael.png" alt="Rael Reusable Menstrual Cup (Size 2)" width="250" height="250"> <a href="Menstrual Cups - Heavy - Rael.html">Rael Reusable Menstrual Cup (Size 2)</a> </div>
+    <div class="box heavyFlow external organic active singleUse easy"> <img src="images\Period Underwear - Disposable - Organic -  Rael.png" alt="Rael Organic Cotton Disposable Period Underwear" width="250" height="250"> <a href="Period Underwear - Rael.html">Rael Organic Cotton Disposable Period Underwear</a> </div>
+    <div class="box heavyFlow external active nonOrganic reusable easy"> <img src="images\Period Underwear - Reusable - Rael.png" alt="Rael Reusable Period Underwear" width="250" height="250"> <a href="Period Underwear - Reusable - Rael.html">Rael Reusable Period Underwear</a> </div>
+  </div>
+<script src="scripts.js"></script>
+</body>
 
-    <script src="scripts.js"></script>
-  </body>
 </html>

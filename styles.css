@@ -1,191 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100&family=Syncopate:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100&family=Syncopate:wght@400;700&display=swap");
 
 html {
-    box-sizing: border-box;
-    background-color: #ffd4d4;
-    font-size: 16px;
+  box-sizing: border-box;
+  background-color: #ffd4d4;
+  font-size: 16px;
 }
 
 /*nav styles*/
 
 nav {
-    top: 0;
-    width: 100%;
-    background: #ff9097;
-    display: flex;
-    justify-content: space-evenly;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: #ff9097;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 nav .mainMenu {
-    display: flex;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
 nav .mainMenu li a {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 10px;
-    text-decoration: none;
-    color: #272727;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #272727;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 nav .mainMenu li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav .openMenu {
-    margin: 30px;
-    display: none;
+  margin: 30px;
+  display: none;
 }
 
-nav .mainMenu .closeMenu, .icons i {
-    display: none;
+nav .mainMenu .closeMenu,
+.icons i {
+  display: none;
 }
 
 nav .logo {
-    color: #272727;
-    font-size: 1.5em;
+  color: #272727;
+  font-size: 1.5em;
 }
 
-@media(max-width:600px) {
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: top 1s ease;
-        display: none;
-    }
+@media (max-width: 600px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    display: none;
+  }
 
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    } 
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 
-    nav .openMenu {
-        display: block;
-    }
+  nav .openMenu {
+    display: block;
+  }
 
-    .icons i {
-        display:inline-block;
-        padding: 5px;
-    }
+  .icons i {
+    display: inline-block;
+    padding: 5px;
+  }
 }
+
 header img {
-    width: 80%;
+  width: 80%;
 }
 
 body {
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    color: #272727;
-    margin: auto;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #272727;
+  margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Syncopate', Arial, Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Syncopate", Arial, Helvetica, sans-serif;
 }
 
 #description {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 #description h2 {
-    font-size: 1.50em;
+  font-size: 1.5em;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .quiz {
-    line-height: 2;
-    text-align: center;
-    width: 75%;
-    margin: 0 auto;
+  line-height: 2;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .quiz li {
-    background: #ff949b;
-    color: #272727;
-    padding: 5px 10px;
-    border-radius: 15px;
+  background: #ff949b;
+  color: #272727;
+  padding: 5px 10px;
+  border-radius: 15px;
 }
 
 button {
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    background-color: #2b50aa;
-    color: #ffd4d4;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 15px; 
-}
-
-a:active {
-    color: #2b50aa;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #020283;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 /*product styles*/
 
 .productImg img {
-    box-shadow: 6px 5px 11px 0px #272727;
+  box-shadow: 6px 5px 11px 0px #272727;
 }
 
 .productCard ul {
-    background: #ff9097;
-    color: #272727;
-    padding: 5px 10px;
-    border-radius: 15px;
+  background: #ff9097;
+  color: #272727;
+  padding: 5px 10px;
+  border-radius: 15px;
 }
 
 input[value="Buy Here"] {
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    background-color: #2b50aa;
-    color: #ffd4d4;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 15px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  background-color: #2b50aa;
+  color: #ffd4d4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 input[value="Not right? Try again!"] {
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    background-color: #2b50aa;
-    color: #ffd4d4;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 15px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  background-color: #2b50aa;
+  color: #ffd4d4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 /*product directory styles*/
 .filters {
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 20%;
+  left: 0;
+  background: #ff949b;
+  overflow-y: scroll;
+  padding: 5px 10px;
+}
+
+.filterBtn {
+  padding: 7px;
+  background: #ff949b;
+  color: #272727;
+  display: block;
+  border: none;
+}
+
+.filterBtn:hover {
+  text-decoration: underline;
 }
 
 .box {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: flex;
+  display: block;
+}
+
+.objects {
+  margin-left: 165px;
+  padding: 10px;
+  line-height: 1.5;
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.objects img {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.box a {
+    text-decoration: none;
 }
