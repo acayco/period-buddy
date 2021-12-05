@@ -134,11 +134,13 @@ button {
     margin-bottom: 15px; 
 }
 
-.filters {
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+a:active {
+    color: #2b50aa;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #020283;
 }
 
 /*product styles*/
@@ -170,4 +172,20 @@ input[value="Not right? Try again!"] {
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 15px;
+}
+
+/*product directory styles*/
+.filters {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    display: none;
+}
+
+.show {
+    display: flex;
 }
