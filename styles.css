@@ -10,11 +10,13 @@ html {
 
 nav {
   top: 0;
+  left: 0;
   width: 100%;
   position: fixed;
   background: #ff9097;
   display: flex;
   justify-content: space-evenly;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 nav .mainMenu {
@@ -90,11 +92,16 @@ header img {
   width: 80%;
 }
 
-body {
+main {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   color: #272727;
-  margin: auto;
+  margin-top: 130px;
+  margin: 130px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -143,15 +150,23 @@ button {
 
 /*product styles*/
 
-.productImg img {
+.productCard {
+    margin: 15px 0;
+    width: 300px;
+    background: #ff9097;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
   box-shadow: 6px 5px 11px 0px #272727;
+  background-color: white;
+  border-radius: 15px;
 }
 
 .productCard ul {
-  background: #ff9097;
   color: #272727;
-  padding: 5px 10px;
-  border-radius: 15px;
 }
 
 input[value="Buy Here"] {
