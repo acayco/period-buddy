@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+
 <header>
   <img src="logo-light.png" alt="Period Buddy">
   <div class="menu">
@@ -25,107 +27,155 @@
     <p>Feminine care has come a long way to meet the different needs of menstruating people. It’s not just pads and tampons that are out there anymore! Although there are plenty of options in the sea now, it’s so easy to feel overwhelmed with these new choices.</p> 
     <p><strong>Take our quiz to find the best product for your menstrual experience! </strong></p>
   </div>
-  <section>
+  <body>
 
-    <! use the input type that he used for breakfast choices!>
+<section>
+  <div class="carousel--wrapper carousel--wrapper--sec">
+    <div class="carousel">
+      <div class="progress-bar">
+        <div class="progress-bar-insider" data-progress=""></div>
+      </div>
+      <div class="carousel__content" style="width: 1800%; transform: translate(0%, 0px);">
+        <div class="carousel--item" style="width: 5.55556%;">
+          <p class="carousel--title carousel--title--sub">Take a few minutes to find your perfect period product.</p>
+          <span class="carousel--radios"><button class="btn btn-primary nav--buttons--right mt">Start</button>
+            </span>
+        </div>
+        <div class="carousel--item" style="width: 5.55556%;">
+          <p class="carousel--title">How heavy is your period?</p>
+         
+          <span class="carousel--radios">
+              <div class="radio-item">
+                <input id="q1light" class="questions" data-text="light" name="q1" type="radio"> <label for="q1light">light</label>
+                  </div>
+                  <div class="radio-item">
+                    <input id="q1medium" data-text="medium" name="q1" type="radio">
+                    <label for="q1medium">medium</label>
+                  </div>
+                  <div class="radio-item">
+                    <input id="q1heavy" data-text="heavy" name="q1" type="radio">
+                    <label for="q1heavy">heavy</label>
+                  </div>
+                  <div class="radio-item">
+                    <input id="q1superheavy" data-text="superheavy" name="q1" type="radio">
+                    <label for="q1superheavy">super heavy</label>
+                  </div>
+                </span>
+              </div>
+            
+       
+        <div class="carousel--item " style="width: 5.55556%;">
+          <p class="carousel--title">How physically active are you when you're on your period?</p>
 
-      <form id="quiz">
-        <ul>
-          <li>How heavy are your periods?</li>
-          <div>
-            <input type="radio">Light</input>
-          </div>
-          <div>
-            <input type="radio">Medium</input>
-          </div>
-          <div>
-            <input type="radio">Heavy</input>
-          </div>
-          <div>
-            <input type="radio">Super heavy</input>
-          </div>
+                <span class="carousel--radios">
+                  <div class="radio-item">
+                    <input id="q2no" class="questions" data-text="no" name="q2" type="radio">
+                    <label for="q2no">I am not active at all</label>
+                  </div>
+                  <div class="radio-item">
+                    <input id="q2moderate" data-text="moderate" name="q2" type="radio">
+                    <label for ="q2moderate">I am a bit active</label>
+                  </div>
+                  <div class="radio-item">
+                    <input id="q2yes" data-text="yes" name="q2" type="radio">
+                    <label for="q2yes">I am super active</label>
+                  </div>
+                </span>
+              </div>
+        
+        <div class="carousel--item " style="width: 5.55556%;">
+          <p class="carousel--title">How open are you to learning a new product?</p>
 
-          </div>
-          <li>How physically active are you when you’re on your period?</li>
-          <div>
-            <div>
-              <input type="radio">I am not active at all</input>
-            </div>
-            <div>
-              <input type="radio">I’m a bit active</input>
-            </div>
-            <div>
-              <input type="radio">I’m super active</input>
-            </div>
-          </div>
-          <li>How open are you to learning how to use a new product?</li>
-          <div>
-            <div>
-              <input type="radio">I want an easy product to use</input>
-            </div>
-            <div>
-              <input type="radio">I don’t want a too difficult product to use</input>
-            </div>
-            <div>
-              <input type="radio">I don’t mind the learning curve</input>
-            </div>
-          </div>
-          <li> How concerned are you about using organic products?</li>
-          <div>
-            <div>
+                <span class="carousel--radios">
+                  <div class="radio-item">
+                    <input id="q3easy" data-text="easy" name="q3" type="radio">
+                    <label for="q3easy"> I want an easy product to use</label>
+                  </div>
+                  <div class="radio-item">
+                    <input id="q3moderate" data-text="moderate" name="q3" type="radio">
+                    <label for="q3moderate">I don't want a too difficult product to use</label>
+                  </div>
+                  <div class="radio-item">
+                    <input id="q3hard" data-text="hard" name="q3" type="radio">
+                    <label for="q3hard">I don;t mind the learning curve</label>
+                  </div>
+                </span>
+              </div>
+        
+        <div class="carousel--item " style="width: 5.55556%;">
+          <p class="carousel--title">How concerned are you about using organic products?</p>
 
-              <input type="radio">I only want to use organic products</input>
+                <span class="carousel--radios">
+                  <div class="radio-item">
+                    <input id="q4organic" data-text="organic" name="q4" type="radio">
+                    <label for="q4organic">I only want to use organic products</label>
+                  </div>
+                  <div class="radio-item">
+                    <input id="q4nonorganic" data-text="nonorganic" name="q4" type="radio">
+                    <label for="q4nonorganic">I don't want to use organic products</label>
+                  </div>
+                </span>
+              </div>
+        <div class="carousel--item " style="width: 5.55556%;">
+          <p class="carousel--title">Are you more comfortable with internal-use menstrual products or external use menstrual products?</p>
+       
+          <span class="carousel--radios">
+              <div class="radio-item">
+                <input id="q5internal" class="questions" data-text="internal" name="q5" type="radio">
+                <label for="q5yes">Internal-use</label>
+              </div>
+              <div class="radio-item">
+                <input id="q5external" data-text="external" name="q5" type="radio">
+                <label for="q5no">External-use</label>
+              </div>
+            </span>
+        </div>
+        <div class="carousel--item " style="width: 5.55556%;">
+          <p class="carousel--title">How concerned are you with the sustainability of the product?</p>
+       
+          <span class="carousel--radios">
+              <div class="radio-item">
+                <input id="q6resusable" class="questions" data-text="reusable" name="q6" type="radio">
+                <label for="q6reusable">I want a reusable product</label>
+              </div>
+              <div class="radio-item">
+                <input id="q6disposable" data-text="disposable" name="q6" type="radio">
+                <label for="q6disposable">I want a disposable product</label>
+              </div>
+            </span>
+        </div>
+        <div class="carousel--item " style="width: 5.55556%;">
+          <p class="carousel--title">How much would you like to spend on your menstrual products?</p>
+       
+          <span class="carousel--radios">
+              <div class="radio-item">
+                <input id="q7$" class="questions" data-text="$" name="q7" type="radio">
+                <label for="q7$">I don't want to spend a lot</label>
+              </div>
+              <div class="radio-item">
+                <input id="q7$$" data-text="$$" name="q7" type="radio">
+                <label for="q7$$">I want to spend a moderate amount</label>
             </div>
-            <div>
-              <input type="radio">I don’t mind using organic products</input>
-            </div>
-            <div>
-              <input type="radio">I don’t want to use organic products</input>
-            </div>
+            <div class="radio-item">
+                <input id="q7$$$" class="questions" data-text="$$$" name="q7" type="radio">
+                <label for="q7$$$">I don't want to spend a lot</label>
+              </div>
+            </span>
+        </div>
+       
+        <div class="carousel--item" style="width: 5.55556%;">
+          <p class="carousel--title">Automated Controls Comparison</p>
+          <div class="btn btn-primary carousel--btn" onclick="calc_results(this);">
+            Calculate Results
           </div>
-          <li>How concerned are you about the sustainability of the product?</li>
-          <div>
-            <div>
-              <input type="radio">I want to be able to reuse my product</input>
-            </div>
-            <div>
-              <input type="radio">I don’t mind using reusable products</input>
-            </div>
-            <div>
-              <input type="radio">I don’t want to use reusable products</input>
-            </div>
-          </div>
-
-          <li>
-            Are you more comfortable with internal-use menstrual products or external-use menstrual products?</li>
-          <div>
-            <div>
-              <input type="radio">Internal-use</input>
-            </div>
-            <div>
-              <input type="radio">External-use</input>
-            </div>
-          </div>
-
-          <li>How much would you like to spend on your menstrual products?</li>
-          <div>
-            <div>
-              <input type="radio">I don’t want to spend a lot</input>
-            </div>
-            <div>
-              <input type="radio">I want to spend a moderate amount</input>
-            </div>
-            <div>
-              <input type="radio">I don’t mind spending a lot</input>
-            </div>
-          </div>
-        </ul>
-      </form>
-  </section>
-  <div id="back-next">
-    <button>Back</button>
-    <button>Next</button>
+        </div>
+      </div>
+      <div class="carousel__nav">
+        <a class="nav--buttons nav--buttons--left" href="#" style="display: none;">←</a> <a class="nav--buttons nav--buttons--right" href="#" style="display: none;">→</a>
+      </div>
+    </div>
   </div>
+</section>
+<script src="scripts.js"></script>
 </body>
-
 </html>
