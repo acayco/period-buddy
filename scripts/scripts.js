@@ -53,3 +53,4 @@ function removeClass(element, name) {
   }
   element.ClassName = arr1.join(" ");
 }
+
