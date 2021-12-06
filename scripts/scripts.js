@@ -16,8 +16,7 @@ function close() {
 
 /*product directory*/
 
-data = [
-
+data[
   {
    name: "Always Thin Daily Liners",
    type:"pantyLiner",
@@ -33,7 +32,7 @@ data = [
  },
  {
     name:"Rael Organic Cotton Panty Liners",
-    type: "pantyLiner",
+    type:"pantyLiner",
     price:"moderate",
     flow:"lightFlow",
     use:"external",
@@ -262,7 +261,7 @@ data = [
     difficulty:"easy",
     mobility:"active",
   }
- ]
+]
 
 const container = document.querySelector(".objects");
 const showAll = document.getElementById("showAll")
