@@ -16,7 +16,7 @@ function close() {
 
 /*product directory*/
 
-data[
+const data = [
   {
    name: "Always Thin Daily Liners",
    type:"pantyLiner",
@@ -27,7 +27,7 @@ data[
    reusability:"singleUse",
    difficulty:"easy",
    mobility:"null",
-   img:"images\Panty Liners - Always.png",
+   img:"images\panty-liners-always.png",
    url:"pantyliners_always.html"
  },
  {
@@ -300,14 +300,14 @@ buildResults(matches);
 
 function buildResults(results) {
   results.forEach( item => {
-    const productName = document.createElement('h5');
-    productName.textContent = item.name;
+    const productName = document.createElement('a');
+    productName.textContent = item.url;
     container.appendChild(productName);
     const productImg = document.createElement('img');
+    productImg.setAttribute(src, item.img);
     productImg.textContent = item.img;
+    /*productImg.classList.add("classname)*/
     container.appendChild(productImg);
-    const productUrl = document.createElement('href')
-    productUrl.textContent = item.url;
   })
 
 }
