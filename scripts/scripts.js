@@ -16,6 +16,9 @@ function close() {
 
 /*product directory*/
 
+cont 
+
+
 filterObjects("all");
 
 function filterObjects(c) {
