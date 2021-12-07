@@ -311,7 +311,7 @@ function buildResults(results) {
   })
 
 }
-
+/* home page */
 (function () {
   var carouselTransition, carouselContent, carouselIndex, carouselLength, firstClone, firstItem, isAnimating, itemWidth, lastClone, lastItem;
   carouselTransition = 250;

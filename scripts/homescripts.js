@@ -14,7 +14,7 @@
   firstClone = null;
   lastClone = null;
   carouselContent.css('width', carouselLength * 100 + '%');
-  carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, 0);
+ carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, 0);
   $.each(carouselContent.children(), function () {
       return $(this).css('width', itemWidth + '%');
   });
@@ -57,6 +57,7 @@
       });
   });
 }.call(this));
+
 
 function calc_results() {
 var count;
@@ -101,7 +102,7 @@ var size = $("input[name=size]:checked").val();
 $(":checked").each(function() {
   checked++;
 });
-if ( checked != 16 ) {
+if ( checked != 7 ) {
   alert("Please check all of the questions.");
   return;
 }
@@ -110,6 +111,10 @@ $(".questions").each(function() {
       count++;
   }
 });
+
+
+
+/*
 var less = sumArray(0, count-1, size) ;
 var same = sumArray(count, count, size);
 var more = sumArray(count+1, 15, size);
@@ -147,7 +152,7 @@ $("#auto-con-calc").slideDown("fast", function() {
   }, 'slow');
 });
 }
-
+*/
 function update_progress_bar(index) {
 var checked = index;
 if ( checked === 0 ) {
@@ -155,10 +160,10 @@ if ( checked === 0 ) {
 }
 else {
   checked = checked - 1;
-  $(".progress-bar-insider").css("width", ((checked/15)*96 + 4) + "%");
+  $(".progress-bar-insider").css("width", ((checked/7)*96 + 4) + "%");
 }
-if (checked < 16) {
-  $(".progress-bar-insider").attr("data-progress", (checked + 1) + "/16");
+if (checked < 8) {
+  $(".progress-bar-insider").attr("data-progress", (checked + 1) + "/8");
 }
 else {
   $(".progress-bar-insider").attr("data-progress", "");
@@ -188,7 +193,7 @@ more_slider.css("width", (parseFloat(more) + (parseFloat(same) / 2)) + "%").html
 
 
 
-/*
+
 function filterObjects(c) {
   var x, i;
   x = document.getElementsByClassName("box");
@@ -221,4 +226,3 @@ function removeClass(element, name) {
   }
   element.ClassName = arr1.join(" ");
 }
-*/
