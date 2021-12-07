@@ -291,8 +291,8 @@ const lightFlow = document.getElementById("lightFlow")
 const moderateFlow = document.getElementById("moderateFlow")
 const heavyFlow = document.getElementById("heavyFlow")
 const superHeavy = document.getElementById("superHeavy")
-const internal = document.getElementById("internal")
-const external = document.getElementById("external")
+const internalUse = document.getElementById("internal")
+const externalUse = document.getElementById("external")
 const organic = document.getElementById("organic")
 const nonOrganic = document.getElementById("nonOrganic")
 const active = document.getElementById("active")
@@ -301,6 +301,11 @@ const singleUse = document.getElementById("singleUse")
 const easy = document.getElementById("easy")
 const medium = document.getElementById("medium")
 const difficult = document.getElementById("difficult")
+
+/*showAll.addEventListener('click', function (){
+  console.log(data);
+  seeAll(all);
+}*/
 
 lightFlow.addEventListener('click', function (){
   console.log(this.id);
@@ -322,7 +327,15 @@ superHeavy.addEventListener('click', function (){
   filterObjects(this.id);
 });
 
-filterObjects("all");
+internalUse.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+externalUse.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
 
 function filterObjects (product) {
   let matches = [];
@@ -350,6 +363,12 @@ function buildResults(results) {
     productName.setAttribute('href', item.url)
     productName.textContent = item.name;
     p.appendChild(productName);
+    productName.classList.add("directoryItem");
   })
+
+  /*function seeAll(all) {
+    let all = data[];
+    buildResults(all);
+  }*/
 
 }

@@ -68,12 +68,21 @@ main {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   color: #272727;
-  margin-top: 130px;
   margin: 130px auto auto auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#aboutMain {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #272727;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 h1,
@@ -498,29 +507,19 @@ input[value="Not right? Try again!"] {
   gap: 10px;
 }
 
-.box {
-  display: none;
-  text-align: center;
-}
-
-.show {
-  display: block;
-}
-
-.objects img {
+.productImg {
   background-color: white;
   border-radius: 15px;
 }
 
-.box a {
-    text-decoration: none;
+.directoryItem {
+  text-decoration: none;
+  text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
-  
   nav {
     width: 100%;
-
   }
 
   nav .mainMenu {
@@ -535,6 +534,8 @@ input[value="Not right? Try again!"] {
     align-items: center;
     transition: top 1s ease;
     display: none;
+    line-height: 2;
+    background-color: #ff949b;
   }
 
   nav .mainMenu .closeMenu {
@@ -554,9 +555,10 @@ input[value="Not right? Try again!"] {
   }
 
   .logo {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 1.25em;
   }
-  
+
   .objects {
     width: 165px;
     padding: 10px;
