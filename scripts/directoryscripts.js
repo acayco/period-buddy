@@ -41,6 +41,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pantyliners-rael.html",
+    img: "images\pantyliners-rael.png",
   },
   {
     name: "Rael Organic Cotton Reusable Panty Liners",
@@ -306,6 +307,21 @@ lightFlow.addEventListener('click', function (){
   filterObjects(this.id);
 });
 
+moderateFlow.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+heavyFlow.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+superHeavy.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
 filterObjects("all");
 
 function filterObjects (product) {
@@ -321,15 +337,19 @@ buildResults(matches);
 
 function buildResults(results) {
   results.forEach( item => {
+    const div = document.createElement('div');
+    container.append(div);
+    const productImg = document.createElement('img');
+    productImg.setAttribute('src', item.img);
+    productImg.textContent = item.img;
+    productImg.classList.add("productImg");
+    div.appendChild(productImg);
+    const p = document.createElement('p');
+    div.appendChild(p);
     const productName = document.createElement('a');
     productName.setAttribute('href', item.url)
     productName.textContent = item.name;
-    container.appendChild(productName);
-    const productImg = document.createElement('img');
-    productImg.setAttribute(src, item.img);
-    productImg.textContent = item.img;
-    /*productImg.classList.add("classname)*/
-    container.appendChild(productImg);
+    p.appendChild(productName);
   })
 
 }

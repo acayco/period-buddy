@@ -437,7 +437,6 @@ input[type="radio"]:focus {
 }
 
 img {
-  box-shadow: 6px 5px 11px 0px #272727;
   background-color: white;
   border-radius: 15px;
 }
