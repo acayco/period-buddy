@@ -9,7 +9,7 @@
   <meta name="description" content="Landing page and quiz">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="scripts/scripts.js"></script>
+  <script src="scripts/homescripts.js"></script>
 </head>
 
 
@@ -51,19 +51,19 @@
          
           <span class="carousel--radios">
               <div class="radio-item">
-                <input id="q1light" class="questions" data-text="light" name="q1" type="radio"> <label for="q1light">light</label>
+                <input id="q1lightFlow" class="questions" data-text="lightFlow" name="q1" type="radio"> <label for="q1lightFlow">light</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q1medium" data-text="medium" name="q1" type="radio">
-                    <label for="q1medium">medium</label>
+                    <input id="q1moderateFlow" data-text="moderateFlow" name="q1" type="radio">
+                    <label for="q1moderateFlow">medium</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q1heavy" data-text="heavy" name="q1" type="radio">
-                    <label for="q1heavy">heavy</label>
+                    <input id="q1heavyFlow" data-text="heavyFlow" name="q1" type="radio">
+                    <label for="q1heavyflow">heavy</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q1superheavy" data-text="superheavy" name="q1" type="radio">
-                    <label for="q1superheavy">super heavy</label>
+                    <input id="q1superHeavy" data-text="superHeavy" name="q1" type="radio">
+                    <label for="q1superHeavy">super heavy</label>
                   </div>
                 </span>
               </div>
@@ -74,16 +74,13 @@
 
                 <span class="carousel--radios">
                   <div class="radio-item">
-                    <input id="q2no" class="questions" data-text="no" name="q2" type="radio">
-                    <label for="q2no">I am not active at all</label>
+                    <input id="q2null" class="questions" data-text="null" name="q2" type="radio">
+                    <label for="q2null">I am not active at all</label>
                   </div>
+                
                   <div class="radio-item">
-                    <input id="q2moderate" data-text="moderate" name="q2" type="radio">
-                    <label for ="q2moderate">I am a bit active</label>
-                  </div>
-                  <div class="radio-item">
-                    <input id="q2yes" data-text="yes" name="q2" type="radio">
-                    <label for="q2yes">I am super active</label>
+                    <input id="q2active" data-text="active" name="q2" type="radio">
+                    <label for="q2active">I am active</label>
                   </div>
                 </span>
               </div>
@@ -97,12 +94,12 @@
                     <label for="q3easy"> I want an easy product to use</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q3moderate" data-text="moderate" name="q3" type="radio">
-                    <label for="q3moderate">I don't want a too difficult product to use</label>
+                    <input id="q3medium" data-text="medium" name="q3" type="radio">
+                    <label for="q3medium">I don't want a too difficult product to use</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q3hard" data-text="hard" name="q3" type="radio">
-                    <label for="q3hard">I don;t mind the learning curve</label>
+                    <input id="q3difficult" data-text="difficult" name="q3" type="radio">
+                    <label for="q3difficult">I don;t mind the learning curve</label>
                   </div>
                 </span>
               </div>
@@ -116,8 +113,8 @@
                     <label for="q4organic">I only want to use organic products</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q4nonorganic" data-text="nonorganic" name="q4" type="radio">
-                    <label for="q4nonorganic">I don't want to use organic products</label>
+                    <input id="q4nonOrganic" data-text="nonOrganic" name="q4" type="radio">
+                    <label for="q4nonOrganic">I don't want to use organic products</label>
                   </div>
                 </span>
               </div>
@@ -127,11 +124,11 @@
           <span class="carousel--radios">
               <div class="radio-item">
                 <input id="q5internal" class="questions" data-text="internal" name="q5" type="radio">
-                <label for="q5yes">Internal-use</label>
+                <label for="q5internal">Internal-use</label>
               </div>
               <div class="radio-item">
                 <input id="q5external" data-text="external" name="q5" type="radio">
-                <label for="q5no">External-use</label>
+                <label for="q5external">External-use</label>
               </div>
             </span>
         </div>
@@ -144,8 +141,8 @@
                 <label for="q6reusable">I want a reusable product</label>
               </div>
               <div class="radio-item">
-                <input id="q6disposable" data-text="disposable" name="q6" type="radio">
-                <label for="q6disposable">I want a disposable product</label>
+                <input id="q6singleUse" data-text="singleUse" name="q6" type="radio">
+                <label for="q6singleUse">I want a disposable product</label>
               </div>
             </span>
         </div>
@@ -154,16 +151,16 @@
        
           <span class="carousel--radios">
               <div class="radio-item">
-                <input id="q7$" class="questions" data-text="$" name="q7" type="radio">
-                <label for="q7$">I don't want to spend a lot</label>
+                <input id="q7low" class="questions" data-text="low" name="q7" type="radio">
+                <label for="q7low">I don't want to spend a lot</label>
               </div>
               <div class="radio-item">
-                <input id="q7$$" data-text="$$" name="q7" type="radio">
-                <label for="q7$$">I want to spend a moderate amount</label>
+                <input id="q7moderate" data-text="moderate" name="q7" type="radio">
+                <label for="q7moderate">I want to spend a moderate amount</label>
             </div>
             <div class="radio-item">
-                <input id="q7$$$" class="questions" data-text="$$$" name="q7" type="radio">
-                <label for="q7$$$">I don't want to spend a lot</label>
+                <input id="q7high" class="questions" data-text="high" name="q7" type="radio">
+                <label for="q7high">I don't want to spend a lot</label>
               </div>
             </span>
         </div>
