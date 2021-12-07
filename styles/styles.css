@@ -436,13 +436,18 @@ input[type="radio"]:focus {
 
 /*product styles*/
 
+#productPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .productCard {
     margin: 15px 0;
     width: 300px;
     background: #ff9097;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
 }
 
 img {
@@ -452,6 +457,7 @@ img {
 
 .productCard ul {
   color: #272727;
+  padding: 0;
 }
 
 input[value="Buy Here"] {
