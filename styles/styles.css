@@ -56,17 +56,6 @@ nav .mainMenu .closeMenu,
   font-size: 1.5em;
 }
 
-/*about styles*/
-#aboutMain {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  color: #272727;
-  margin-top: 130px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 /*index styles*/
 
 body {
@@ -523,6 +512,17 @@ input[value="Not right? Try again!"] {
 .directoryItem {
   text-decoration: none;
   text-align: center;
+}
+
+/*about styles*/
+#aboutMain {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #272727;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
