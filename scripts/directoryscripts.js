@@ -337,6 +337,46 @@ externalUse.addEventListener('click', function (){
   filterObjects(this.id);
 });
 
+organic.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+nonOrganic.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+active.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+reusable.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+singleUse.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+easy.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+medium.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
+difficult.addEventListener('click', function (){
+  console.log(this.id);
+  filterObjects(this.id);
+});
+
 function filterObjects (product) {
   let matches = [];
   data.forEach( item => {
