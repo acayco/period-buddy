@@ -4,18 +4,16 @@ html {
   box-sizing: border-box;
   background-color: #ffd4d4;
   font-size: 16px;
+  padding: 0;
 }
 
 /*nav styles*/
 
 nav {
-  top: 0;
-  left: 0;
-  width: 100%;
-  position: fixed;
   background: #ff9097;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
@@ -23,12 +21,13 @@ nav .mainMenu {
   display: flex;
   align-items: center;
   list-style: none;
+  gap: 10px;
 }
 
 nav .mainMenu li a {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 10px;
+  padding: 10px 10px;
   text-decoration: none;
   color: #272727;
   text-transform: uppercase;
@@ -38,7 +37,8 @@ nav .mainMenu li a {
 }
 
 nav .mainMenu li a:hover {
-  text-decoration: underline;
+  background: #FF4754;
+  transition: ease 0.5s;
 }
 
 nav .openMenu {
@@ -62,15 +62,16 @@ body {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   color: #272727;
-  max-width: 75ch;
-  margin: auto;
+  padding: 0;
+  margin: 0;
 }
 
 main {
+  max-width: 75ch;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   color: #272727;
-  margin: 130px auto auto auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,7 +187,6 @@ title p {
 .lightgray {
   background: #fff;
 }
-*/
 
 body,
 html {
@@ -340,7 +340,7 @@ label {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   background-color: #2b50aa;
   color: #ffd4d4;
-  padding: 5px 10px;
+  padding: 10px 30px;
   border-radius: 5px;
   margin-bottom: 15px;
   border: none;
@@ -449,10 +449,12 @@ input[type="radio"]:focus {
 }
 
 .productCard {
-    margin: 15px 0;
+    margin: 15px 0px;
     width: 300px;
     background: #ff9097;
     border-radius: 15px;
+    text-align: left;
+    padding: 0 0 0 30px;
 }
 
 img {
@@ -511,23 +513,36 @@ input[value="Not right? Try again!"] {
 }
 
 .objects {
-  margin-left: 165px;
+  margin-left: 175px;
   padding: 10px;
   line-height: 1.5;
-  margin-top: 120px;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
 
+.objects div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .productImg {
   background-color: white;
   border-radius: 15px;
+  width: 200px;
+  height: 200px;
 }
 
-.directoryItem {
+.objects p {
   text-decoration: none;
   text-align: center;
+}
+
+#show {
+  transition: ;
+  translate: ;
 }
 
 /*about styles*/
@@ -535,9 +550,6 @@ input[value="Not right? Try again!"] {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   color: #272727;
-  margin-top: 130px;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
 }
 
@@ -552,6 +564,11 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
+
+  .filtersMenu {
+    
+  }
+  
   nav {
     width: 100%;
   }
@@ -567,7 +584,6 @@ a {
     justify-content: center;
     align-items: center;
     transition: top 1s ease;
-    display: none;
     line-height: 2;
     background-color: #ff949b;
   }
@@ -590,21 +606,35 @@ a {
 
   .logo {
     width: 100%;
-    font-size: 1.25em;
+    font-size: 60%;
+    margin: 10px;
   }
 
   .objects {
     width: 165px;
     padding: 10px;
     line-height: 1.5;
-    margin-top: 120px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
   }
+
+  .filters {
+    width: 100%;
+    background: #ff9097;
+    display: none;
+  }
+
+  .filterBtn {
+    background: #ff9097;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
+  .logo {
+    font-size: 75%;
+  }
+  
   .objects {
     width: 165px;
     padding: 10px;
@@ -614,4 +644,5 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   } 
+
 }

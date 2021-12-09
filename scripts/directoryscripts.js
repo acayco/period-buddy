@@ -27,7 +27,7 @@ const data = [
    reusability:"singleUse",
    difficulty:"easy",
    mobility:"null",
-   img:"images\pantyliners-always.png",
+   img:"images/pantyliners-always.png",
    url:"pantyliners_always.html"
  },
  {
@@ -41,7 +41,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pantyliners-rael.html",
-    img: "images\pantyliners-rael.png",
+    img: "images/pantyliners-rael.png",
   },
   {
     name: "Rael Organic Cotton Reusable Panty Liners",
@@ -54,6 +54,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pantyliners-reusable-rael.html",
+    img: "images/pantyliners-reusable-rael.png",
   },
   {
    name: "Always Ultra Thin Pads",
@@ -65,7 +66,8 @@ const data = [
    material:"nonOrganic",
    difficulty:"easy",
    mobility:"null",
-   url: "pads-regular-always.html", 
+   url: "pads-regular-always.html",
+   img: "images/pads-regular-always.png", 
   },
   {
     name: "Rael Organic Cotton Pads (Regular)",
@@ -78,6 +80,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pads-regular-rael.html",
+    img: "images/pads-regular-rael.png"
   },
   {
     name: "Rael Organic Cotton Reusable Pads (Regular)",
@@ -90,6 +93,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pads-regular-reusable-rael.html",
+    img: "images/pads-reusable-rael.png"
   },
   {
     name:"Always Pure Cotton with Wings",
@@ -102,6 +106,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pads-heavy-always.html",
+    img: "images/pads-heavy-always.png",
   },
   {
     name:"Rael Organic Cotton Pads (Large)",
@@ -114,6 +119,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pads-heavy-rael.html",
+    img: "images/pads-regular-rael.png",
   },
   {
     name: "Rael Organic Cotton Reusable Pads (Large)",
@@ -126,6 +132,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pads-heavy-reusable-rael.html",
+    img: "images/pads-reusable-rael.png",
   },
   {
     name: "Always Overnight Absorbency Unscented without Wings",
@@ -138,6 +145,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pads-superheavy-always.html",
+    img: "images/pads-super-heavy-always.png",
   },
   {
     name: "Rael Organic Cotton Overnight Pads",
@@ -150,6 +158,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pads-superheavy-rael.html",
+    img: "images/pads-super-heavy-rael.png",
   },
   {
     name: "Rael Organic Cotton Reusable Pads (Overnight)",
@@ -162,6 +171,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "pads-superheavy-reusable-rael.html",
+    img: "images/pads-super-heavy-reusable-rael.png",
   },
   {
     name: "Tampax Lite Absorbency Tampons",
@@ -174,6 +184,7 @@ const data = [
     difficulty:"medium",
     mobility:"active",
     url: "tampons-light-tampax.html",
+    img: "images/tampons-light-tampax.png",
   },
   {
     name: "Tampax Regular Absorbency with LeakGuard Braid",
@@ -186,6 +197,7 @@ const data = [
     difficulty:"medium",
     mobility:"active",
     url: "tampons-regular-tampax.html",
+    img: "images/tampons-regular-tampax.png",
   },
   {
     name: "Rael Organic Tampons (Regular)",
@@ -198,6 +210,7 @@ const data = [
     difficulty:"medium",
     mobility:"active",
     url: "tampons-regular-rael.html",
+    img: "images/tampons-organic-rael.png",
   },
   {
     name: "Tampax Ultra Tampons",
@@ -210,6 +223,7 @@ const data = [
     difficulty:"medium",
     mobility:"active",
     url: "tampons-heavy-tampax.html",
+    img: "images/tampons-heavy-tampax.png",
   },
   {
     name: "Rael Organic Tampons (Super)",
@@ -222,6 +236,7 @@ const data = [
     difficulty:"medium",
     mobility:"active",
     url: "tampons-heavy-rael.html",
+    img: "images/tampons-heavy-rael.png",
   },
   {
     name: "Tampax Super Plus Absorbency Tampons",
@@ -234,6 +249,7 @@ const data = [
     difficulty:"medium",
     mobility:"active",
     url: "tampons-superheavy-tampax.html",
+    img: "images/tampons-super-heavy-tampax.png",
   },
   {
     name: "Rael Reusable Menstrual Cup (Size 1)",
@@ -246,6 +262,7 @@ const data = [
     difficulty:"difficult",
     mobility:"active",
     url: "menstrualcups-rael.html",
+    img: "images/menstrualcup-size1.png",
   },
   {
     name: "Rael Reusable Menstrual Cup (Size 2)",
@@ -258,6 +275,7 @@ const data = [
     difficulty:"difficult",
     mobility:"active",
     url: "menstrualcups-heavy-rael.html",
+    img: "images/menstrualcup-size2.png",
   },
   {
     name: "Rael Organic Cotton Disposable Period Underwear",
@@ -270,6 +288,7 @@ const data = [
     difficulty:"easy",
     mobility:"null",
     url: "periodunderwear-rael.html",
+    img: "images/periodunderwear-disposable-rael.png",
   },
   {
     name: "Rael Reusable Period Underwear",
@@ -282,9 +301,12 @@ const data = [
     difficulty:"easy",
     mobility:"active",
     url: "periodunderwear-reusable-rael.html",
+    img: "images/periodunderwear-reusable-real.png",
   }
 ]
 
+const filterMenu = document.querySelector(".filters")
+const triggerFilter = document.getElementById("showFilters");
 const container = document.querySelector(".objects");
 const showAll = document.getElementById("showAll")
 const lightFlow = document.getElementById("lightFlow")
@@ -302,10 +324,13 @@ const easy = document.getElementById("easy")
 const medium = document.getElementById("medium")
 const difficult = document.getElementById("difficult")
 
-/*showAll.addEventListener('click', function (){
+showAll.addEventListener('click', function (){
   console.log(data);
-  seeAll(all);
-}*/
+  filterObjects(this.id);
+
+});
+
+triggerFilter.addEventListener('click', showFilters );
 
 lightFlow.addEventListener('click', function (){
   console.log(this.id);
@@ -379,7 +404,13 @@ difficult.addEventListener('click', function (){
 
 function filterObjects (product) {
   let matches = [];
+  if (product == 'showAll') {
+      data.forEach(item => {
+        matches.push(item);
+      });
+  }
   data.forEach( item => {
+    
     if (item.flow == product) {
       matches.push(item);
     }
@@ -389,6 +420,7 @@ buildResults(matches);
 }
 
 function buildResults(results) {
+  clearResults();
   results.forEach( item => {
     const div = document.createElement('div');
     container.append(div);
@@ -406,9 +438,12 @@ function buildResults(results) {
     productName.classList.add("directoryItem");
   })
 
-  /*function seeAll(all) {
-    let all = data[];
-    buildResults(all);
-  }*/
+}
 
+function clearResults(){
+  container.innerHTML = "";
+}
+
+function showFilters() {
+  filterMenu.classList.add("show");
 }
