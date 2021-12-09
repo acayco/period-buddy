@@ -131,7 +131,7 @@ $(".questions").each(function() {
 
 
 
-/*
+
 var less = sumArray(0, count-1, size) ;
 var same = sumArray(count, count, size);
 var more = sumArray(count+1, 15, size);
@@ -169,7 +169,9 @@ $("#auto-con-calc").slideDown("fast", function() {
   }, 'slow');
 });
 }
-*/
+
+
+
 function update_progress_bar(index) {
 var checked = index;
 if ( checked === 0 ) {
@@ -193,53 +195,17 @@ $('.nav--buttons--right').trigger('click');
 });
 
 function sliderControl(less, same, more) {
-var less_slider = $(".score-slider-less");
-var same_slider = $(".score-slider");
-var more_slider = $(".score-slider-more");
+  var less_slider = $(".score-slider-less");
+  var same_slider = $(".score-slider");
+  var more_slider = $(".score-slider-more");
 
-if ( same < 5.00 ) {
-  same_slider.css("width", "5%");
-}
-else {
-  less_slider.css("width", same + "%");
-}
-same_slider.css("left", less + "%").html(same + "%");
-less_slider.css("width", (parseFloat(less) + (parseFloat(same) / 2)) + "%").html(less + "%");
-more_slider.css("width", (parseFloat(more) + (parseFloat(same) / 2)) + "%").html(more + "%");
-}
-
-
-
-
-function filterObjects(c) {
-  var x, i;
-  x = document.getElementsByClassName("box");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    removeClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-  }
-}
-
-function addClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+    if ( same < 5.00 ) {
+      same_slider.css("width", "5%");
     }
-  }
-}
-
-function removeClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[1]), 1);
+    else {
+      less_slider.css("width", same + "%");
     }
-  }
-  element.ClassName = arr1.join(" ");
+    same_slider.css("left", less + "%").html(same + "%");
+    less_slider.css("width", (parseFloat(less) + (parseFloat(same) / 2)) + "%").html(less + "%");
+    more_slider.css("width", (parseFloat(more) + (parseFloat(same) / 2)) + "%").html(more + "%");
 }

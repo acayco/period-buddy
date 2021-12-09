@@ -415,6 +415,30 @@ function filterObjects (product) {
       matches.push(item);
     }
   });
+  data.forEach( item => {
+    
+    if (item.reusability == product) {
+      matches.push(item);
+    }
+  });
+  data.forEach( item => {
+    
+    if (item.material == product) {
+      matches.push(item);
+    }
+  });
+  data.forEach( item => {
+    
+    if (item.difficulty == product) {
+      matches.push(item);
+    }
+  });
+  data.forEach( item => {
+    
+    if (item.mobility == product) {
+      matches.push(item);
+    }
+  });
   console.log(matches); 
 buildResults(matches);
 }
