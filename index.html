@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,32 +6,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Period Buddy</title>
-  <meta name="description" content="Landing page and quiz">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Product Description Page</title>
+  <meta name="description" content="Product Description Page">
+  <link rel="stylesheet" href="styles/homestyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/jquery.transit.min.js"></script>
 </head>
 
+
+<header>
+  <img src="logo-light.png" alt="Period Buddy">
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#productdirectory">Product Directory</a>
+  </div>
+</header>
+
 <body>
-  <header>
-    <nav>
-    <div class="logo"><h1>Period Buddy</h1></div>
-    <div class="openMenu"><i class="fa fa-bars"></i></div>
-    <ul class="mainMenu">  
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="product_directory.html">Product Directory</a></li>
-      <div class="closeMenu"><i class="fa fa-times"></i></div>
-    </ul>
-    </nav>
-  </header>
-  <main>
   <div id="description">
     <h2>Description</h2>
     <p>Feminine care has come a long way to meet the different needs of menstruating people. It’s not just pads and tampons that are out there anymore! Although there are plenty of options in the sea now, it’s so easy to feel overwhelmed with these new choices.</p> 
     <p><strong>Take our quiz to find the best product for your menstrual experience! </strong></p>
   </div>
-  <body>
+  <section>
 
 <section>
   <div class="carousel--wrapper carousel--wrapper--sec">
@@ -38,147 +38,144 @@
       <div class="progress-bar">
         <div class="progress-bar-insider" data-progress=""></div>
       </div>
-      <div class="carousel__content" style="width: 1800%; transform: translate(0%, 0px);">
-        <div class="carousel--item" style="width: 5.55556%;">
+      <div class="carousel__content">
+        <div class="carousel--item">
           <p class="carousel--title carousel--title--sub">Take a few minutes to find your perfect period product.</p>
           <span class="carousel--radios"><button class="btn btn-primary nav--buttons--right mt">Start</button>
             </span>
         </div>
-        <div class="carousel--item" style="width: 5.55556%;">
+        <div class="carousel--item">
           <p class="carousel--title">How heavy is your period?</p>
          
           <span class="carousel--radios">
               <div class="radio-item">
-                <input id="q1lightFlow" class="questions" data-text="lightFlow" name="q1" type="radio"> <label for="q1lightFlow">Light</label>
+                <input id="q1lightFlow" class="questions" value="lightFlow" name="questionOne" type="radio"> <label for="q1lightFlow">light</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q1moderateFlow" data-text="moderateFlow" name="q1" type="radio">
-                    <label for="q1moderateFlow">Medium</label>
+                    <input id="q1moderateFlow" value="moderateFlow" name="questionOne" type="radio">
+                    <label for="q1mooderateFlow">medium</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q1heavyFlow" data-text="heavyFlow" name="q1" type="radio">
-                    <label for="q1heavyflow">Heavy</label>
+                    <input id="q1heavyFlow" value="heavyFlow" name="questionOne" type="radio">
+                    <label for="q1heavyFlow">heavy</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q1superHeavy" data-text="superHeavy" name="q1" type="radio">
-                    <label for="q1superHeavy">Super heavy</label>
+                    <input id="q1superHeavy" value="superHeavy" name="questionOne" type="radio">
+                    <label for="q1superHeavy">super heavy</label>
                   </div>
                 </span>
               </div>
             
        
-        <div class="carousel--item " style="width: 5.55556%;">
+        <div class="carousel--item ">
           <p class="carousel--title">How physically active are you when you're on your period?</p>
 
                 <span class="carousel--radios">
                   <div class="radio-item">
-                    <input id="q2null" class="questions" data-text="null" name="q2" type="radio">
+                    <input id="q2null" class="questions" value="null" name="questionTwo" type="radio">
                     <label for="q2null">I am not active at all</label>
                   </div>
-                
+                 
                   <div class="radio-item">
-                    <input id="q2active" data-text="active" name="q2" type="radio">
-                    <label for="q2active">I am active</label>
+                    <input id="q2active" value="active" name="questionTwo" type="radio">
+                    <label for="q2active">I am super active</label>
                   </div>
                 </span>
               </div>
         
-        <div class="carousel--item " style="width: 5.55556%;">
+        <div class="carousel--item ">
           <p class="carousel--title">How open are you to learning a new product?</p>
 
                 <span class="carousel--radios">
                   <div class="radio-item">
-                    <input id="q3easy" data-text="easy" name="q3" type="radio">
+                    <input id="q3easy" value="easy" name="questionThree" type="radio">
                     <label for="q3easy"> I want an easy product to use</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q3medium" data-text="medium" name="q3" type="radio">
+                    <input id="q3medium" value="medium" name="questionThree" type="radio">
                     <label for="q3medium">I don't want a too difficult product to use</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q3difficult" data-text="difficult" name="q3" type="radio">
+                    <input id="q3difficult" value="difficult" name="questionThree" type="radio">
                     <label for="q3difficult">I don't mind the learning curve</label>
                   </div>
                 </span>
               </div>
         
-        <div class="carousel--item " style="width: 5.55556%;">
+        <div class="carousel--item ">
           <p class="carousel--title">How concerned are you about using organic products?</p>
 
                 <span class="carousel--radios">
                   <div class="radio-item">
-                    <input id="q4organic" data-text="organic" name="q4" type="radio">
+                    <input id="q4organic" value="organic" name="questionFour" type="radio">
                     <label for="q4organic">I only want to use organic products</label>
                   </div>
                   <div class="radio-item">
-                    <input id="q4nonOrganic" data-text="nonOrganic" name="q4" type="radio">
+                    <input id="q4nonOrganic" value="nonOrganic" name="questionFour" type="radio">
                     <label for="q4nonOrganic">I don't want to use organic products</label>
                   </div>
                 </span>
               </div>
-        <div class="carousel--item " style="width: 5.55556%;">
+        <div class="carousel--item ">
           <p class="carousel--title">Are you more comfortable with internal-use menstrual products or external use menstrual products?</p>
        
           <span class="carousel--radios">
               <div class="radio-item">
-                <input id="q5internal" class="questions" data-text="internal" name="q5" type="radio">
-                <label for="q5internal">Internal-use</label>
+                <input id="q5internal" class="questions" value="internal" name="questionFive" type="radio">
+                <label for="q5yes">Internal-use</label>
               </div>
               <div class="radio-item">
-                <input id="q5external" data-text="external" name="q5" type="radio">
-                <label for="q5external">External-use</label>
+                <input id="q5external" value="external" name="questionFive" type="radio">
+                <label for="q5no">External-use</label>
               </div>
             </span>
         </div>
-        <div class="carousel--item " style="width: 5.55556%;">
+        <div class="carousel--item ">
           <p class="carousel--title">How concerned are you with the sustainability of the product?</p>
        
           <span class="carousel--radios">
               <div class="radio-item">
-                <input id="q6resusable" class="questions" data-text="reusable" name="q6" type="radio">
+                <input id="q6resusable" class="questions" value="reusable" name="questionSix" type="radio">
                 <label for="q6reusable">I want a reusable product</label>
               </div>
               <div class="radio-item">
-                <input id="q6singleUse" data-text="singleUse" name="q6" type="radio">
+                <input id="q6singleUse" value="singleUse" name="questionSix" type="radio">
                 <label for="q6singleUse">I want a disposable product</label>
               </div>
             </span>
         </div>
-        <div class="carousel--item " style="width: 5.55556%;">
+        <div class="carousel--item ">
           <p class="carousel--title">How much would you like to spend on your menstrual products?</p>
        
           <span class="carousel--radios">
               <div class="radio-item">
-                <input id="q7low" class="questions" data-text="low" name="q7" type="radio">
+                <input id="q7low" class="questions" value="low" name="questionSeven" type="radio">
                 <label for="q7low">I don't want to spend a lot</label>
               </div>
               <div class="radio-item">
-                <input id="q7moderate" data-text="moderate" name="q7" type="radio">
+                <input id="q7moderate" value="moderate" name="questionSeven" type="radio">
                 <label for="q7moderate">I want to spend a moderate amount</label>
             </div>
             <div class="radio-item">
-                <input id="q7high" class="questions" data-text="high" name="q7" type="radio">
+                <input id="q7high" class="questions" value="high" name="questionSeven" type="radio">
                 <label for="q7high">I don't want to spend a lot</label>
               </div>
             </span>
         </div>
        
-        <div class="carousel--item" style="width: 5.55556%;">
-          <p class="carousel--title">Automated Controls Comparison</p>
-          <div class="btn btn-primary carousel--btn" onclick="calc_results(this);">
+        <d class="carousel--item">
+          <p class="carousel--title">Find my product!</p>
+          <button id="btnCalculate">
             Calculate Results
-          </div>
+          </button>
         </div>
       </div>
       <div class="carousel__nav">
-        <a class="nav--buttons nav--buttons--left" href="#">←</a> <a class="nav--buttons nav--buttons--right" href="#">→</a>
+        <a class="nav--buttons nav--buttons--left" href="#" style="display: none;">←</a> <a class="nav--buttons nav--buttons--right" href="#" style="display: none;">→</a>
       </div>
     </div>
   </div>
 </section>
-</main>
 <script src="scripts/homescripts.js"></script>
-<script src="scripts/jquery-3.6.0.js"></script>
-<scripts src="scripts/jquery.transit.min.js"></script>
 </body>
 </html>
