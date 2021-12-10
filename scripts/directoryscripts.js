@@ -1,21 +1,3 @@
-const mainMenu = document.querySelector(".mainMenu");
-const closeMenu = document.querySelector(".closeMenu");
-const openMenu = document.querySelector(".openMenu");
-
-openMenu.addEventListener("click", show);
-closeMenu.addEventListener("click", close);
-
-function show() {
-  mainMenu.style.display = "flex";
-  mainMenu.style.top = "0";
-}
-
-function close() {
-  mainMenu.style.top = "-100%";
-}
-
-/*product directory*/
-
 const data = [
   {
    name: "Always Thin Daily Liners",
@@ -327,7 +309,7 @@ const difficult = document.getElementById("difficult")
 showAll.addEventListener('click', function (){
   console.log(data);
   filterObjects(this.id);
-
+  filterMenu.classList.add("hide");
 });
 
 triggerFilter.addEventListener('click', showFilters );
@@ -335,71 +317,85 @@ triggerFilter.addEventListener('click', showFilters );
 lightFlow.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 moderateFlow.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 heavyFlow.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 superHeavy.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 internalUse.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 externalUse.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 organic.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 nonOrganic.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 active.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 reusable.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 singleUse.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 easy.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 medium.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 difficult.addEventListener('click', function (){
   console.log(this.id);
   filterObjects(this.id);
+  filterMenu.classList.add("hide");
 });
 
 function filterObjects (product) {
@@ -412,6 +408,12 @@ function filterObjects (product) {
   data.forEach( item => {
     
     if (item.flow == product) {
+      matches.push(item);
+    }
+  });
+  data.forEach( item => {
+    
+    if (item.use == product) {
       matches.push(item);
     }
   });
@@ -470,4 +472,5 @@ function clearResults(){
 
 function showFilters() {
   filterMenu.classList.add("show");
+  filterMenu.classList.remove("hide");
 }
