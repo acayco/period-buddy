@@ -494,7 +494,7 @@ btn.addEventListener("click", ( )=>
     maxIndex = resultarray.indexOf(Math.max.apply(Math, resultarray));
     nameOfProduct = productData[maxIndex].name;
     productURL = productData[maxIndex].url;
-    locations.href = productURL;
+    location.href = productURL;
     } );
 
 
