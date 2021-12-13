@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Description Page</title>
+  <title>Period Buddy - Home</title>
   <meta name="description" content="Product Description Page">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
@@ -50,19 +50,20 @@
          
           <span class="carousel--radios">
               <div class="radio-item">
-                <input id="q1lightFlow" class="questions" value="lightFlow" name="questionOne" type="radio"> <label for="q1lightFlow">light</label>
+                <input id="q1lightFlow" class="questions" value="lightFlow" name="questionOne" type="radio"> 
+                <label for="q1lightFlow">Light</label>
                   </div>
                   <div class="radio-item">
                     <input id="q1moderateFlow" value="moderateFlow" name="questionOne" type="radio">
-                    <label for="q1mooderateFlow">medium</label>
+                    <label for="q1mooderateFlow">Medium</label>
                   </div>
                   <div class="radio-item">
                     <input id="q1heavyFlow" value="heavyFlow" name="questionOne" type="radio">
-                    <label for="q1heavyFlow">heavy</label>
+                    <label for="q1heavyFlow">Heavy</label>
                   </div>
                   <div class="radio-item">
                     <input id="q1superHeavy" value="superHeavy" name="questionOne" type="radio">
-                    <label for="q1superHeavy">super heavy</label>
+                    <label for="q1superHeavy">Super heavy</label>
                   </div>
                 </span>
               </div>
@@ -76,10 +77,13 @@
                     <input id="q2null" class="questions" value="null" name="questionTwo" type="radio">
                     <label for="q2null">I am not active at all</label>
                   </div>
-                 
+                  <div class="radio-item">
+                    <input id="q2moderateactive" class="questions" value="active" name="questionTwo" type="radio">
+                    <label for="q2moderateactive">I'm a bit active</label>
+                  </div>
                   <div class="radio-item">
                     <input id="q2active" value="active" name="questionTwo" type="radio">
-                    <label for="q2active">I am super active</label>
+                    <label for="q2active">I am active</label>
                   </div>
                 </span>
               </div>
@@ -104,44 +108,47 @@
               </div>
         
         <div class="carousel--item ">
-          <p class="carousel--title">How concerned are you about using organic products?</p>
-
+          <p class="carousel--title">Do you prefer using organic products?</p>
                 <span class="carousel--radios">
                   <div class="radio-item">
                     <input id="q4organic" value="organic" name="questionFour" type="radio">
-                    <label for="q4organic">I only want to use organic products</label>
+                    <label for="q4organic">Yes</label>
                   </div>
                   <div class="radio-item">
                     <input id="q4nonOrganic" value="nonOrganic" name="questionFour" type="radio">
-                    <label for="q4nonOrganic">I don't want to use organic products</label>
+                    <label for="q4nonOrganic">No</label>
                   </div>
                 </span>
               </div>
         <div class="carousel--item ">
-          <p class="carousel--title">Are you more comfortable with internal-use menstrual products or external use menstrual products?</p>
+          <p class="carousel--title">Do you prefer using the product internally or externally?</p>
        
           <span class="carousel--radios">
               <div class="radio-item">
                 <input id="q5internal" class="questions" value="internal" name="questionFive" type="radio">
-                <label for="q5yes">Internal-use</label>
+                <label for="q5yes">Internally</label>
+              </div>
+              <div class="radio-item">
+                <input id="null" value="null" name="questionFive" type="radio">
+                <label for="null">I don't have a preference</label>
               </div>
               <div class="radio-item">
                 <input id="q5external" value="external" name="questionFive" type="radio">
-                <label for="q5no">External-use</label>
+                <label for="q5no">Externally</label>
               </div>
             </span>
         </div>
         <div class="carousel--item ">
-          <p class="carousel--title">How concerned are you with the sustainability of the product?</p>
+          <p class="carousel--title">Do you prefer using reusable products?</p>
        
           <span class="carousel--radios">
               <div class="radio-item">
                 <input id="q6resusable" class="questions" value="reusable" name="questionSix" type="radio">
-                <label for="q6reusable">I want a reusable product</label>
+                <label for="q6reusable">Yes</label>
               </div>
               <div class="radio-item">
                 <input id="q6singleUse" value="singleUse" name="questionSix" type="radio">
-                <label for="q6singleUse">I want a disposable product</label>
+                <label for="q6singleUse">No</label>
               </div>
             </span>
         </div>
@@ -159,26 +166,26 @@
             </div>
             <div class="radio-item">
                 <input id="q7high" class="questions" value="high" name="questionSeven" type="radio">
-                <label for="q7high">I don't want to spend a lot</label>
+                <label for="q7high">I don't mind spending a lot</label>
               </div>
             </span>
         </div>
        
         <d class="carousel--item">
-          <p class="carousel--title">Find my product!</p>
         <a href="#">
           <button id="btnCalculate">
-            Calculate Results
+            Find my product!
           </button>
         </a>
         </div>
       </div>
       <div class="carousel__nav">
-        <a class="nav--buttons nav--buttons--left" href="#" style="display: none;">←</a> <a class="nav--buttons nav--buttons--right" href="#" style="display: none;">→</a>
+        <a class="nav--buttons nav--buttons--left" href="#">←</a> <a class="nav--buttons nav--buttons--right" href="#">→</a>
       </div>
     </div>
   </div>
 </section>
 <script src="scripts/homescripts.js"></script>
+<script src="scripts\navscripts.js"></script>
 </body>
 </html>

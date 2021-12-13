@@ -24,7 +24,7 @@
       isAnimating = true;
       carouselIndex--;
       update_progress_bar(carouselIndex);
-      $(".nav--buttons--right").css("display", "block");
+      $(".nav--buttons--right").css("display", "flex");
       if (carouselIndex === 0 || carouselIndex === 1) {
         $(".nav--buttons--left").css("display", "none");
       }
